@@ -14,7 +14,7 @@ public class PairSum {
         int arr1[] = {8,3,4,2,5};
         int sum=6;
 
-        System.out.println(pairSumCal(arr, target));
+        System.out.println(pairSumCal(arr1, sum));
 
 
     }
@@ -22,14 +22,26 @@ public class PairSum {
     private static boolean pairSumCal(int[] arr, int target) {
         HashSet<Integer> hs = new HashSet<>();
         //this code will not work if target value have exact half value in arr, bz sum=6 and 3 is present in arr 6-3 =3 check will return true
-        for(int x : arr) {
-            hs.add(target-x);
-        }
+//        for(int x : arr) {
+//            hs.add(target-x);
+//        }
+//
+//        for(int a : arr) {
+//            if (hs.contains(a) == true) {
+//                return true;
+//            }
+//        }
+//        return false;
 
-        for(int a : arr) {
-            if (hs.contains(a) == true) {
+        //correct logic for finding if a pair exist in array those sum is equal to target.
+        // 1st check if target-x present in hashset or not , if present return true else add the x and continue
+        // as we are using hashset duplicate element will not be stored
+
+        for(int x: arr) {
+            if(hs.contains(target-x)) {
                 return true;
             }
+            hs.add(x);
         }
         return false;
     }
