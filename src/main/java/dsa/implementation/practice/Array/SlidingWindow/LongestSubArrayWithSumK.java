@@ -1,8 +1,10 @@
 package dsa.implementation.practice.Array.SlidingWindow;
 
 public class LongestSubArrayWithSumK {
+    /* using sliding window statergy
+    **/
     public static void main(String[] args) {
-        int arr[] = {4,1,1,1,2,3,5};
+        int arr[] = {4,1,1,1,-2,3,5};
 //        {4,1,1,1,-2,3,5}
         int i=0,j=0;
         int k = 5;
@@ -27,7 +29,3 @@ public class LongestSubArrayWithSumK {
         System.out.println(max);
     }
 }
-//j=5
-//// sum=8
-//max= 4
-//i=1

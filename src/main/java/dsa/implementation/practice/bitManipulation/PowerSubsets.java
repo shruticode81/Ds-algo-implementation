@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class PowerSubsets {
     public static List<List<Integer>> subsets(int[] arr) {
     List<List<Integer>> subsets = new ArrayList<>();
+    // cal total subset which can be generated with n size array 1<<n = 2^n
     int totalSubsets = 1 << arr.length; // x << y = x * 2^n
     for (int num = 0; num < totalSubsets; num++) {
     List<Integer> subset = new ArrayList<>();

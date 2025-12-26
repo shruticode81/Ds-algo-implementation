@@ -3,6 +3,7 @@ package dsa.implementation.practice.Array.SlidingWindow;
 import java.util.HashMap;
 
 /**input array contains both +ve and -ve**/
+/**solve using prefix sum + hashmap**/
 public class LongestSubArrayWithNegWithSumK {
     public static void main(String[] args) {
         int arr[] = {4,1,1,1,-2,3,5};
