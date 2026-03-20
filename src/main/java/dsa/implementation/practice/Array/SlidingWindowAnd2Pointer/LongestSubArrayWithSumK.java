@@ -1,4 +1,4 @@
-package dsa.implementation.practice.Array.SlidingWindow;
+package dsa.implementation.practice.Array.SlidingWindowAnd2Pointer;
 
 public class LongestSubArrayWithSumK {
     /* using sliding window statergy
