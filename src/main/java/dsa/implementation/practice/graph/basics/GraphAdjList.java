@@ -19,6 +19,15 @@ public class GraphAdjList {
         this.adjList[v].add(u);
         E++;
     }
+
+    public LinkedList<Integer>[] getAdjList() {
+        return adjList;
+    }
+
+    public void setAdjList(LinkedList<Integer>[] adjList) {
+        this.adjList = adjList;
+    }
+
     public static void main(String[] args) {
         GraphAdjList graph = new GraphAdjList(4);
         graph.addEdges(0,1);
